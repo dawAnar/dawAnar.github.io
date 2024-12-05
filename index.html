@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FUTBOL11</title>
-    <title>FUTBOL11</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        /* Estilo para el fondo */
+        * {box-sizing: border-box;}
         body {
             background-image: url('img/FONDO.jpg'); /* Ruta de la imagen de fondo */
             background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-            background-position: center center; /* Centra la imagen */
+            background-position: center; /* Centra la imagen */
             background-repeat: no-repeat; /* Evita que la imagen se repita */
             height: 100vh; /* Hace que la imagen ocupe toda la ventana del navegador */
             margin: 0; /* Elimina el margen predeterminado del navegador */
@@ -77,17 +76,18 @@
 
         /* Estilo para el header */
         header {
-            width: 97%; /* Hace que el header ocupe todo el ancho */
-            padding: 20px; /* Espaciado interno */
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
             color: white;
             display: flex;
-            justify-content: space-between; /* Distribuye los elementos entre los extremos */
+            justify-content: center; /* Centra horizontalmente los elementos */
             align-items: center; /* Alinea verticalmente los elementos */
             position: absolute;
             top: 0;
             left: 0;
         }
+
 
         .header-title {
             display: flex; /* Usamos Flexbox para alinear horizontalmente el título y la imagen */
@@ -106,7 +106,7 @@
 
 
         footer {
-            width: 97%; /* Mismo ancho que el header */
+            width: 100%; /* Mismo ancho que el header */
             padding: 20px; /* Espaciado interno */
             background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
             color: white; /* Texto blanco */
@@ -130,7 +130,6 @@
         <a href="saskia.html" class="saskia">🛒</a>
         <div class="header-title">
             <h1>FUTBOL11</h1>
-            <img src="img/LOGO.jpg" alt="logoa", width="100px", height="100px">
         </div>
     </header>
 
@@ -138,7 +137,7 @@
     <div class="azalpena">
         <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
         <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a>!</p>
-        <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak daude! Orain dena %20ko deskontuarekin!</p>
+        <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
         <p><a href="erreklamazio.html">Erreklamazioak</a> | <a href="op.html">Iritzia</a></p>
     </div>
 

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lea Artibai Denda</title>
+    <style>
+        /* Estilo general */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+        }
+
+        /* Header */
+        header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        header img {
+            max-height: 50px;
+        }
+
+        /* Navegación */
+        nav {
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            margin: 0 15px;
+            font-size: 16px;
+        }
+
+        /* Contenido principal */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .button {
+            display: block;
+            width: 100%;
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .submit-button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .submit-button:hover {
+            background-color: #0056b3;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Lea Artibai Ikastetxea">
+        <h1>Denda</h1>
+    </header>
+    <nav>
+        <a href="#">Hasiera</a>
+        <a href="#">Katalogoa</a>
+        <a href="#">Nobedadeak</a>
+        <a href="#">Eskaintzak</a>
+        <a href="#">Kontaktua</a>
+    </nav>
+    <main>
+        <h1>Eskaeria</h1>
+        <h2>Kreditu-txartelaren datuak</h2>
+        <form>
+            <label for="mota">Mota:</label>
+            <select id="mota" name="mota">
+                <option value="visa">Visa</option>
+                <option value="mastercard">MasterCard</option>
+                <option value="amex">American Express</option>
+            </select>
+            <label for="titularra">Titularra:</label>
+            <input type="text" id="titularra" name="titularra">
+            <label for="zenbakia">Zenbakia:</label>
+            <input type="text" id="zenbakia" name="zenbakia">
+            <label for="iraungitze-data">Iraungitze-data (hh/uu):</label>
+            <select id="hilabetea" name="hilabetea">
+                <option value="01">01</option>
+                <option value="02">02</option>
+                <option value="03">03</option>
+                <!-- Más meses -->
+            </select>
+            <select id="urtea" name="urtea">
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <!-- Más años -->
+            </select>
+            <label for="cvc">CVC:</label>
+            <input type="text" id="cvc" name="cvc">
+            <a href="eskaria5.html" class="submit-button">Eskaria bidali</a>
+        </form>
+    </main>
+    <footer>
+        <p>© 2020 Lea Artibai Ikastetxea</p>
+    </footer>
+</body>
+</html>
