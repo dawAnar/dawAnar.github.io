@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>11FUTBOL</title>
+    <title>FUTBOL11</title>
+    <title>FUTBOL11</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         /* Estilo para el fondo */
         body {
@@ -45,16 +47,19 @@
 
         /* Estilo para el bloque de explicación */
         .azalpena {
-            color: white;
             font-size: 1.2rem;
+            font-weight: bold;
+            color: white;
+            text-shadow: 2px 2px 5px black;
             margin-bottom: 20px; /* Espacio debajo del texto */
         }
 
         /* Enlaces */
         a {
-            color: #000000;
+            color: #0a3a81;
             text-decoration: none;
             font-size: 1.2rem;
+            text-shadow: 1px 1px 2px rgb(177, 199, 206);
         }
 
         /* Estilo para el carrito */
@@ -78,16 +83,44 @@
             color: white;
             display: flex;
             justify-content: space-between; /* Distribuye los elementos entre los extremos */
-            align-items: center; /* Alinea verticalmente */
+            align-items: center; /* Alinea verticalmente los elementos */
             position: absolute;
             top: 0;
             left: 0;
         }
 
-        /* Contenedor para centrar el título */
         .header-title {
-            flex: 1;
-            text-align: center;
+            display: flex; /* Usamos Flexbox para alinear horizontalmente el título y la imagen */
+            align-items: center; /* Centra el texto y la imagen verticalmente */
+            justify-content: center; /* Centra el título y la imagen dentro del contenedor */
+            gap: 10px; /* Espacio entre el título y la imagen */
+            text-align: center; /* Asegura que el texto esté centrado */
+        }
+
+        header a.saskia {
+            font-size: 24px; /* Ajusta el tamaño del ícono del carrito */
+            color: white; /* Color blanco para el ícono */
+            text-decoration: none; /* Elimina el subrayado */
+        }
+
+
+
+        footer {
+            width: 97%; /* Mismo ancho que el header */
+            padding: 20px; /* Espaciado interno */
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+            color: white; /* Texto blanco */
+            display: flex; /* Activa Flexbox */
+            justify-content: space-between; /* Distribuye los elementos entre los extremos */
+            align-items: center; /* Centra verticalmente los elementos */
+            position: absolute; /* Posición fija */
+            bottom: 0; /* Ubica el footer en la parte inferior */
+            left: 0; /* Alineado con el borde izquierdo */
+        }
+
+        footer p {
+            margin: 0; /* Elimina márgenes */
+            font-size: 1rem; /* Ajusta el tamaño del texto */
         }
     </style>
 </head>
@@ -96,14 +129,17 @@
     <header>
         <a href="saskia.html" class="saskia">🛒</a>
         <div class="header-title">
-            <h1>11FUTBOL</h1>
+            <h1>FUTBOL11</h1>
+            <img src="img/LOGO.jpg" alt="logoa", width="100px", height="100px">
         </div>
     </header>
 
     <!-- Bloque de explicación -->
     <div class="azalpena">
-        <p>Ongi etorri 11FUTBOL web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu</p>
-        <p><a href="contacto.html">Contacto</a> | <a href="politica.html">Política de privacidad</a></p>
+        <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
+        <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a>!</p>
+        <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak daude! Orain dena %20ko deskontuarekin!</p>
+        <p><a href="erreklamazio.html">Erreklamazioak</a> | <a href="op.html">Iritzia</a></p>
     </div>
 
     <!-- Formulario de selección de equipos -->
@@ -132,4 +168,10 @@
         </select>
     </form>
 </body>
+<footer class="footer">
+    <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
+    <p><i class="fab fa-instagram"></i> anartzaranguren</p>
+    <p><i class="fas fa-phone"></i> 946317896</p>
+</footer>
+
 </html>

@@ -38,5 +38,25 @@ h1 {
     background-color: #1e73be;
     text-decoration: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease;
 }
+
+body img {
+    width: 250px; 
+    height: 250px; 
+}
+
+.prezioa {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.zaharra {
+    text-decoration: line-through; /* Tacha el precio antiguo */
+    color: #888; /* Color gris para el precio tachado */
+    margin-right: 10px; /* Espacio entre el precio antiguo y el nuevo */
+}
+
+.berria {
+    color: #e74c3c; /* Color rojo para el precio con descuento */
+}
+
