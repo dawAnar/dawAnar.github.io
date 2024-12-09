@@ -3,93 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Erosketa Eskaria</title>
+    <title>Eskaria</title>
     <link rel="stylesheet" href="cssTaldeak/eska2.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <div class="header-content">
-            <img src="img/logo.png" alt="Lea Artibai" width="50">
-            <h1>Denda</h1>
-            <a href="saskia.html" class="saskia">Saskia</a>
+    <div class="container">
+        <div class="header">
+            <nav class="nav">
+                <a href="index.html">Hasiera</a>
+                <a href="saskia.html">Saskia</a>
+            </nav>
         </div>
-        <nav>
-            <a href="hasiera.html">Hasiera</a>
-            <a href="katalogoa.html">Katalogoa</a>
-            <a href="nobedadeak.html">Nobedadeak</a>
-            <a href="eskaintzak.html">Eskaintzak</a>
-            <a href="kontaktua.html">Kontaktua</a>
-        </nav>
-    </header>
-
-    <main>
-        <section>
-            <h2>Eskaria</h2>
-
-            <!-- Produktuen informazioa -->
-            <h3>Produktuak</h3>
-            <table>
-                <thead>
+        <main>
+            <section>
+                <div id="cart-content">
+                    <table class="cart-table">
+                        <thead>
+                            <tr>
+                                <th>Produktua</th>
+                                <th>Salneurria</th>
+                                <th>Kopurua</th>
+                                <th>Guztira</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Athletic 2024/2025 lehen kamiseta</td>
+                                <td>30,00 €</td>
+                                <td>1</td>
+                                <td>30,00 €</td>
+                            </tr>
+                            <tr>
+                                <td>Girona 2024/2025 lehen kamiseta</td>
+                                <td>30,00 €</td>
+                                <td>1</td>
+                                <td>30,00 €</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <div class="cart-total">
+                        Guztira: 60,00 €
+                    </div>
+                    <a href="eskaria1.html" class="submit-button">Hurrengoa</a>
+                </div>
+        
+                <!-- Bezeroaren informazioa -->
+                <h2>Zure datuak</h2>
+                <table class="user-data">
                     <tr>
-                        <th>Produktua</th>
-                        <th>Salneurria</th>
-                        <th>Kopurua</th>
-                        <th>Guztira</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Athletic 2024/2025 lehen kamiseta</td>
-                        <td>30,00 €</td>
-                        <td>1</td>
-                        <td>30,00 €</td>
+                        <td>Izena: Anartz</td>
                     </tr>
                     <tr>
-                        <td>Girona 2024/2025 lehen kamiseta</td>
-                        <td>30,00 €</td>
-                        <td>1</td>
-                        <td>30,00 €</td>
+                        <td>Abizena: Aranguren</td>
                     </tr>
                     <tr>
-                        <td colspan="3" class="align-right">Guztira</td>
-                        <td>60,00 €</td>
+                        <td>Helbidea: Landaburu Kalea 5</td>
                     </tr>
-                </tbody>
-            </table>
-            <a href="saskia.html" class="submit-button">Produktuak aldatu</a>
-
-            <!-- Bezeroaren informazioa -->
-            <h3>Zure datuak</h3>
-        <table class="user-data">
-            <tr>
-                <td>Izena: Anartz</td>
-            </tr>
-            <tr>
-                <td>Abizena: Aranguren</td>
-            </tr>
-            <tr>
-                <td>Helbidea: Landaburu Kalea 5</td>
-            </tr>
-            <tr>
-                <td>Herria: Dima</td>
-            </tr>
-            <tr>
-                <td>Posta-kodea: 48141</td>
-            </tr>
-            <tr>
-                <td>Probintzia: Bizkaia</td>
-            </tr>
-            <tr>
-                <td>E-maila: daw24anar@ikasle.leartik.eus</td>
-            </tr>
-        </table>
-            <a href="eskaria1.html" class="submit-button">Zure datuak aldatu</a>
-            <a href="eskaria3.html" class="submit-button">Hurrengoa</a>
-        </section>
-    </main>
-
+                    <tr>
+                        <td>Herria: Dima</td>
+                    </tr>
+                    <tr>
+                        <td>Posta-kodea: 48141</td>
+                    </tr>
+                    <tr>
+                        <td>Probintzia: Bizkaia</td>
+                    </tr>
+                    <tr>
+                        <td>E-maila: daw24anar@ikasle.leartik.eus</td>
+                    </tr>
+                </table>
+            </section>
+        
+            <!-- Contenedor para los botones -->
+            <div class="button-container">
+                <a href="eskaria1.html" class="submit-button">Zure datuak aldatu</a>
+                <a href="eskaria3.html" class="submit-button">Hurrengoa</a>
+            </div>
+        </main>
     <footer>
-        <p>&copy; 2020 Lea Artibai Ikastetxea</p>
+        <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
+        <p><i class="fab fa-instagram"></i> anartzaranguren</p>
+        <p><i class="fas fa-phone"></i> 946317896</p>
     </footer>
 </body>
 </html>

@@ -9,20 +9,38 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f4;
+            background-color: white; /* Fondo gris oscuro como el original */
+        }
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro como en el ejemplo anterior */
+            padding: 15px;
+            text-align: right;
+            width: 100%; /* Asegura que el nav ocupe todo el ancho */
+            position: fixed;
+            top: 0;
+            left: 0;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+        }
+
+        .nav a {
+            color: rgb(245, 243, 238);
+            text-decoration: none;
+            margin-right: 15px;
         }
 
         .container {
-            width: 60%;
-            margin: 50px auto;
+            width: 100%; /* Ocupa todo el ancho disponible */
             padding: 20px;
             background-color: white;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            box-sizing: border-box; /* Asegura que el padding no afecte al ancho */
+            margin-top: 60px; /* Espacio para que no se cubra por el nav fijo */
         }
 
         h1 {
-            text-align: center;
-            color: #1e73be;
+            text-align: left; /* Alineado a la izquierda */
+            color: black;
         }
 
         label {
@@ -52,9 +70,33 @@
         button:hover {
             background-color: #155a8a;
         }
+
+        footer {
+            width: 100%; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
     </style>
 </head>
 <body>
+
+    <div class="nav">
+        <a href="#">Hasiera</a>
+        <a href="#">Saskia</a>
+    </div>
 
     <div class="container">
         <h1>Erreklamazio Orria</h1>
@@ -76,6 +118,12 @@
             </form>
         </form>
     </div>
+
+    <footer>
+        <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
+        <p><i class="fab fa-instagram"></i> anartzaranguren</p>
+        <p><i class="fas fa-phone"></i> 946317896</p>
+    </footer>
 
 </body>
 </html>
