@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -6,175 +6,202 @@
     <title>FUTBOL11</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
-        * {box-sizing: border-box;}
+        * {
+            box-sizing: border-box;
+        }
+
         body {
-            background-image: url('img/FONDO.jpg'); /* Ruta de la imagen de fondo */
-            background-size: cover; /* Hace que la imagen cubra toda la pantalla */
-            background-position: center; /* Centra la imagen */
-            background-repeat: no-repeat; /* Evita que la imagen se repita */
-            height: 100vh; /* Hace que la imagen ocupe toda la ventana del navegador */
-            margin: 0; /* Elimina el margen predeterminado del navegador */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: column;
-            text-align: center;
-        }
-        .nav a {
-            color: rgb(245, 243, 238);
+            margin: 0;
+            height: 100vh;
+            font-family: Arial, sans-serif;
+            background-image: url('img/FONDO.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
         }
 
-        /* Estilo para el título */
-        h1 {
-            color: white;
-            font-size: 3rem;
-            margin-bottom: 30px; /* Espacio debajo del título */
+        .main-container {
+            width: 100%;
         }
 
-        /* Estilo para el formulario */
-        form {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-
-        /* Estilo para el selector de equipos */
-        select {
-            font-size: 1rem; /* Aumenta el tamaño del texto */
-            padding: 15px; /* Espaciado dentro del cuadro */
-            width: 300px; /* Ancho del selector */
-            margin-bottom: 30px; /* Espacio debajo del selector */
-            border-radius: 8px; /* Bordes redondeados */
-        }
-
-        /* Estilo para el bloque de explicación */
-        .azalpena {
-            font-size: 1.2rem;
-            font-weight: bold;
-            color: white;
-            text-shadow: 2px 2px 5px black;
-            margin-bottom: 20px; /* Espacio debajo del texto */
-        }
-
-        /* Enlaces */
-        a {
-            color: #0a3a81;
-            text-decoration: none;
-            font-size: 1.2rem;
-            text-shadow: 1px 1px 2px rgb(177, 199, 206);
-        }
-
-        /* Estilo para el carrito */
-        .saskia {
-            position: absolute; /* Posiciona el carrito en la parte superior */
-            top: 20px;
-            right: 20px;
-            font-size: 1.5rem;
-            color: white;
-            background-color: #1e73be;
-            padding: 10px 20px;
-            border-radius: 8px;
-            text-decoration: none;
-        }
-
-        /* Estilo para el header */
-        header {
+        .header {
             width: 100%;
             padding: 20px;
             background-color: rgba(0, 0, 0, 0.6);
             color: white;
-            display: flex;
-            justify-content: center; /* Centra horizontalmente los elementos */
-            align-items: center; /* Alinea verticalmente los elementos */
+            text-align: center;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
+        .header a.saskia {
             position: absolute;
-            top: 0;
-            left: 0;
+            right: 20px;
+            font-size: 1.5rem;
+            text-decoration: none;
         }
 
-
-        .header-title {
-            display: flex; /* Usamos Flexbox para alinear horizontalmente el título y la imagen */
-            align-items: center; /* Centra el texto y la imagen verticalmente */
-            justify-content: center; /* Centra el título y la imagen dentro del contenedor */
-            gap: 10px; /* Espacio entre el título y la imagen */
-            text-align: center; /* Asegura que el texto esté centrado */
+        .row {
+            width: 100%;
+            margin-top: 90px;
+            clear: both; /* Para evitar el problema de colapso de float */
         }
 
-        header a.saskia {
-            font-size: 24px; /* Ajusta el tamaño del ícono del carrito */
-            color: white; /* Color blanco para el ícono */
-            text-decoration: none; /* Elimina el subrayado */
+        .col {
+            padding: 15px;
+            float: left; /* Usamos float a la izquierda para que los tres bloques estén alineados */
         }
 
+        .col1 {
+            width: 33.33%; /* El bloque de texto */
+        }
 
+        .col2 {
+            width: 33.33%; /* El bloque de selección */
+        }
+
+        .col3 {
+            width: 33.33%; /* El bloque de imagen */
+        }
+
+        .center-content {
+            text-align: center;
+        }
+
+        .intro {
+            font-size: 1rem;
+            color: white;
+            margin-bottom: 20px;
+            text-shadow: 1px 1px 3px black;
+        }
+
+        .intro a {
+            color: #add8e6;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .intro a:hover {
+            text-decoration: underline;
+        }
+
+        .links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .links ul li {
+            margin: 5px 0;
+        }
+
+        .links ul li a {
+            color: #add8e6;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1rem;
+            text-shadow: 1px 1px 3px black;
+            font-family: Arial, sans-serif;
+        }
+
+        .links ul li a:hover {
+            text-decoration: underline;
+        }
+
+        select {
+            font-size: 1rem;
+            padding: 10px;
+            border-radius: 5px;
+            font-family: Arial, sans-serif;
+        }
+
+        .col3 img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+        }
 
         footer {
-            width: 100%; /* Mismo ancho que el header */
-            padding: 20px; /* Espaciado interno */
-            background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
-            color: white; /* Texto blanco */
-            display: flex; /* Activa Flexbox */
-            justify-content: space-between; /* Distribuye los elementos entre los extremos */
-            align-items: center; /* Centra verticalmente los elementos */
-            position: absolute; /* Posición fija */
-            bottom: 0; /* Ubica el footer en la parte inferior */
-            left: 0; /* Alineado con el borde izquierdo */
+            width: 100vw;
+            padding: 2%;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
         }
 
         footer p {
-            margin: 0; /* Elimina márgenes */
-            font-size: 1rem; /* Ajusta el tamaño del texto */
+            margin: 0;
+            font-size: 1rem;
         }
+
     </style>
 </head>
 <body>
-    <!-- Header con enlace al carrito -->
-    <header>
-        <a href="saskia.html" class="saskia">🛒</a>
-        <div class="header-title">
-            <h1>FUTBOL11</h1>
-        </div>
-    </header>
+    <div class="main-container">
+        <header class="header">
+            <a href="saskia.html" class="saskia">🛒</a>
+            <div class="header-title">
+                <h1>FUTBOL11</h1>
+            </div>
+        </header>
 
-    <!-- Bloque de explicación -->
-    <div class="azalpena">
-        <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
-        <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a>!</p>
-        <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
-        <p><a href="erreklamazio.html">Erreklamazioak</a> | <a href="op.html">Iritzia</a></p>
+        <div class="row">
+            <div class="col col1">
+                <div class="intro">
+                    <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
+                    <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a></p>
+                    <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
+                </div>
+                <div class="links">
+                    <ul>
+                        <li><a href="erreklamazio.html">Erreklamazioak</a></li>
+                        <li><a href="info.html">Info</a></li>
+                        <li><a href="op.html">Iritzia</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col col2 center-content">
+                <form method="get">
+                    <select name="equipos" id="equipos" onchange="location = this.value;">
+                        <option value="">-- Aukeratu bat --</option>
+                        <option value="alaves.html">Alaves</option>
+                        <option value="ath.html">Athletic</option>
+                        <option value="atletico.html">Atletico de Madrid</option>
+                        <option value="bar.html">Barcelona</option>
+                        <option value="cel.html">Celta de Vigo</option>
+                        <option value="gtf.html">Getafe</option>
+                        <option value="gir.html">Girona</option>
+                        <option value="leg.html">Leganés</option>
+                        <option value="lpm.html">Las Palmas</option>
+                        <option value="mll.html">Mallorca</option>
+                        <option value="osa.html">Osasuna</option>
+                        <option value="rv.html">Rayo Vallecano</option>
+                        <option value="bet.html">Real Betis</option>
+                        <option value="rma.html">Real Madrid</option>
+                        <option value="rso.html">Real Sociedad</option>
+                        <option value="sev.html">Sevilla</option>
+                        <option value="valencia.html">Valencia</option>
+                        <option value="valla.html">Valladolid</option>
+                        <option value="villa.html">Villarreal</option>
+                    </select>
+                </form>
+            </div>
+            <div class="col col3 center-content">
+                <img src="img/LOGO.jpg" alt="Logoa">
+            </div>
+        </div>
     </div>
 
-    <!-- Formulario de selección de equipos -->
-    <form method="get">
-        <select name="equipos" id="equipos" onchange="location = this.value;">
-            <option value="">-- Aukeratu nahi duzun taldea --</option>
-            <option value="alaves.html">Alaves</option>
-            <option value="ath.html">Athletic</option>
-            <option value="atletico.html">Atletico de Madrid</option>
-            <option value="bar.html">Barcelona</option>
-            <option value="cel.html">Celta de Vigo</option>
-            <option value="gtf.html">Getafe</option>
-            <option value="gir.html">Girona</option>
-            <option value="leg.html">Leganés</option>
-            <option value="lpm.html">Las Palmas</option>
-            <option value="mll.html">Mallorca</option>
-            <option value="osa.html">Osasuna</option>
-            <option value="rv.html">Rayo Vallecano</option>
-            <option value="bet.html">Real Betis</option>
-            <option value="rma.html">Real Madrid</option>
-            <option value="rso.html">Real Sociedad</option>
-            <option value="sev.html">Sevilla</option>
-            <option value="valencia.html">Valencia</option>
-            <option value="valla.html">Valladolid</option>
-            <option value="villa.html">Villarreal</option>
-        </select>
-    </form>
     <footer class="footer">
         <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
         <p><i class="fab fa-instagram"></i> anartzaranguren</p>
         <p><i class="fas fa-phone"></i> 946317896</p>
     </footer>
 </body>
-
-
 </html>
