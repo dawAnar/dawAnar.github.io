@@ -19,9 +19,20 @@
             background-position: center;
             background-repeat: no-repeat;
         }
+        
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
+        }
 
-        .main-container {
-            width: 100%;
+        [class*="col-"] {
+            float: left;
+            padding: 15px;
+        }
+
+        html {
+            font-family: "Lucida Sans", sans-serif;
         }
 
         .header {
@@ -33,7 +44,6 @@
             font-size: 1.5rem;
             position: relative;
         }
-
         .header a.saskia {
             position: absolute;
             right: 20px;
@@ -41,87 +51,24 @@
             text-decoration: none;
         }
 
-        .row {
-            width: 100%;
-            margin-top: 90px;
-            clear: both; /* Para evitar el problema de colapso de float */
-        }
-
-        .col {
-            padding: 15px;
-            float: left; /* Usamos float a la izquierda para que los tres bloques estén alineados */
-        }
-
-        .col1 {
-            width: 33.33%; /* El bloque de texto */
-        }
-
-        .col2 {
-            width: 33.33%; /* El bloque de selección */
-        }
-
-        .col3 {
-            width: 33.33%; /* El bloque de imagen */
-        }
-
-        .center-content {
-            text-align: center;
-        }
-
-        .intro {
-            font-size: 1rem;
-            color: white;
-            margin-bottom: 20px;
-            text-shadow: 1px 1px 3px black;
-        }
-
-        .intro a {
-            color: #add8e6;
-            text-decoration: none;
-            font-weight: bold;
-        }
-
-        .intro a:hover {
-            text-decoration: underline;
-        }
-
-        .links ul {
+        .menu ul {
             list-style-type: none;
+            margin: 0;
             padding: 0;
         }
 
-        .links ul li {
-            margin: 5px 0;
+        .menu li {
+            padding: 8px;
+            margin-bottom: 7px;
+            color: #ffffff;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
         }
 
-        .links ul li a {
-            color: #add8e6;
-            text-decoration: none;
-            font-weight: bold;
-            font-size: 1rem;
-            text-shadow: 1px 1px 3px black;
-            font-family: Arial, sans-serif;
+        .menu{
+            color: white;
         }
 
-        .links ul li a:hover {
-            text-decoration: underline;
-        }
-
-        select {
-            font-size: 1rem;
-            padding: 10px;
-            border-radius: 5px;
-            font-family: Arial, sans-serif;
-        }
-
-        .col3 img {
-            max-width: 80%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
-        }
-
-        footer {
+        .footer {
             width: 100vw;
             padding: 2%;
             background-color: rgba(0, 0, 0, 0.6);
@@ -135,73 +82,118 @@
             box-sizing: border-box;
         }
 
-        footer p {
+        .footer p {
             margin: 0;
             font-size: 1rem;
         }
 
+        .center-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100%;
+        }
+
+        .col-6 {
+            text-align: center; 
+        }
+
+        /* Para móviles */
+        [class*="col-"] {
+            width: 100%;
+        }
+
+        @media only screen and (min-width: 600px) {
+        /* Para tablets */
+            .col-s-1 {width: 8.33%;}
+            .col-s-2 {width: 16.66%;}
+            .col-s-3 {width: 25%;}
+            .col-s-4 {width: 33.33%;}
+            .col-s-5 {width: 41.66%;}
+            .col-s-6 {width: 50%;}
+            .col-s-7 {width: 58.33%;}
+            .col-s-8 {width: 66.66%;}
+            .col-s-9 {width: 75%;}
+            .col-s-10 {width: 83.33%;}
+            .col-s-11 {width: 91.66%;}
+            .col-s-12 {width: 100%;}
+        }
+        @media only screen and (min-width: 768px) {
+        /* Para escritorio */
+            .col-1 {width: 8.33%;}
+            .col-2 {width: 16.66%;}
+            .col-3 {width: 25%;}
+            .col-4 {width: 33.33%;}
+            .col-5 {width: 41.66%;}
+            .col-6 {width: 50%;}
+            .col-7 {width: 58.33%;}
+            .col-8 {width: 66.66%;}
+            .col-9 {width: 75%;}
+            .col-10 {width: 83.33%;}
+            .col-11 {width: 91.66%;}
+            .col-12 {width: 100%;}
+        }
     </style>
 </head>
 <body>
-    <div class="main-container">
-        <header class="header">
-            <a href="saskia.html" class="saskia">🛒</a>
-            <div class="header-title">
-                <h1>FUTBOL11</h1>
-            </div>
-        </header>
 
-        <div class="row">
-            <div class="col col1">
-                <div class="intro">
-                    <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
-                    <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a></p>
-                    <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
-                </div>
-                <div class="links">
-                    <ul>
-                        <li><a href="erreklamazio.html">Erreklamazioak</a></li>
-                        <li><a href="info.html">Info</a></li>
-                        <li><a href="op.html">Iritzia</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="col col2 center-content">
-                <form method="get">
-                    <select name="equipos" id="equipos" onchange="location = this.value;">
-                        <option value="">-- Aukeratu bat --</option>
-                        <option value="alaves.html">Alaves</option>
-                        <option value="ath.html">Athletic</option>
-                        <option value="atletico.html">Atletico de Madrid</option>
-                        <option value="bar.html">Barcelona</option>
-                        <option value="cel.html">Celta de Vigo</option>
-                        <option value="gtf.html">Getafe</option>
-                        <option value="gir.html">Girona</option>
-                        <option value="leg.html">Leganés</option>
-                        <option value="lpm.html">Las Palmas</option>
-                        <option value="mll.html">Mallorca</option>
-                        <option value="osa.html">Osasuna</option>
-                        <option value="rv.html">Rayo Vallecano</option>
-                        <option value="bet.html">Real Betis</option>
-                        <option value="rma.html">Real Madrid</option>
-                        <option value="rso.html">Real Sociedad</option>
-                        <option value="sev.html">Sevilla</option>
-                        <option value="valencia.html">Valencia</option>
-                        <option value="valla.html">Valladolid</option>
-                        <option value="villa.html">Villarreal</option>
-                    </select>
-                </form>
-            </div>
-            <div class="col col3 center-content">
-                <img src="img/LOGO.jpg" alt="Logoa">
-            </div>
+<div class="main-container">
+    <header class="header">
+        <a href="saskia.html" class="saskia">🛒</a>
+        <div class="header-title">
+            <h1>FUTBOL11</h1>
+        </div>
+    </header>
+
+    <div class="row">
+        <div class="col-3 col-s-3 menu">
+            <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
+            <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a></p>
+            <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
+            <ul>
+                <li><a href="erreklamazio.html">Erreklamazioak</a></li>
+                <li><a href="info.html">Info</a></li>
+                <li><a href="op.html">Iritzia</a></li>
+            </ul>
+        </div>
+        <div class="col-6 col-s-9 center-content">
+            <form method="get">
+                <select name="equipos" id="equipos" onchange="location = this.value;">
+                    <option value="">-- Aukeratu bat --</option>
+                    <option value="alaves.html">Alaves</option>
+                    <option value="ath.html">Athletic</option>
+                    <option value="atletico.html">Atletico de Madrid</option>
+                    <option value="bar.html">Barcelona</option>
+                    <option value="cel.html">Celta de Vigo</option>
+                    <option value="gtf.html">Getafe</option>
+                    <option value="gir.html">Girona</option>
+                    <option value="leg.html">Leganés</option>
+                    <option value="lpm.html">Las Palmas</option>
+                    <option value="mll.html">Mallorca</option>
+                    <option value="osa.html">Osasuna</option>
+                    <option value="rv.html">Rayo Vallecano</option>
+                    <option value="bet.html">Real Betis</option>
+                    <option value="rma.html">Real Madrid</option>
+                    <option value="rso.html">Real Sociedad</option>
+                    <option value="sev.html">Sevilla</option>
+                    <option value="valencia.html">Valencia</option>
+                    <option value="valla.html">Valladolid</option>
+                    <option value="villa.html">Villarreal</option>
+                </select>
+            </form>
+        </div>
+
+        <div class="col-3 col-s-12 center-content">
+            <img src="img/LOGO.jpg" alt="Logoa", width="300px", height="300px">
         </div>
     </div>
 
-    <footer class="footer">
+    <div class="footer">
         <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
         <p><i class="fab fa-instagram"></i> anartzaranguren</p>
         <p><i class="fas fa-phone"></i> 946317896</p>
-    </footer>
+    </div>
+</div>
+
 </body>
 </html>
