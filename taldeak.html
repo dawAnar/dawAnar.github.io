@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="eu">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Denda</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        /* CSS incorporado */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #2c2c2c;
+            color: white;
+            margin: 0;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1, h2 {
+            margin-bottom: 15px;
+        }
+
+        .nav {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            text-align: right;
+        }
+
+        .nav a {
+            color: rgb(245, 243, 238);
+            text-decoration: none;
+            margin-right: 15px;
+        }
+
+        footer {
+            width: 100vw;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            box-sizing: border-box;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .productos-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 1200px;
+            justify-content: center;
+        }
+
+        .producto-item {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            flex: 0 1 calc(14.28% - 20px); /* Siete elementos por fila */
+        }
+
+        .producto-item:nth-child(15) ~ .producto-item {
+            flex: 0 1 calc(16.66% - 20px); /* Última fila con seis elementos */
+        }
+
+        .producto-item:hover {
+            transform: scale(1.15);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+        }
+
+        .producto-item img {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+
+        .producto-item h3 {
+            margin-top: 10px;
+            font-size: 1rem;
+            color: #333;
+        }
+
+        .producto-item h4 {
+            color: #555;
+        }
+
+        .producto-item h4 a {
+            text-decoration: none;
+            color: #444;
+        }
+
+        .producto-item h4 a:hover {
+            color: #007bff;
+        }
+
+        .price {
+            font-size: 1.2rem;
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <nav class="nav">
+                <a href="index.html">Hasiera</a>
+                <a href="taldeak.html">Taldeak</a>
+                <a href="saskia.html">Saskia</a>
+                <a href="kontaktua.html">Kontaktua</a>
+            </nav>
+        </div>
+        <div class="main-container">
+            <section class="productos-grid">
+                <a href="alaves.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Alaves.jpg" alt="Producto 1">
+                        <h3>Alaves</h3>
+                    </div>
+                </a>
+                <a href="ath.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Ath.jpg" alt="Producto 1">
+                        <h3>Athletic</h3>
+                    </div>
+                </a>
+                <a href="atletico.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Atletico.jpg" alt="Producto 1">
+                        <h3>Atleico de Madrid</h3>
+                    </div>
+                </a>
+                <a href="bar.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Bar.jpg" alt="Producto 1">
+                        <h3>Barcelona</h3>
+                    </div>
+                </a>
+                <a href="bet.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Bet.jpg" alt="Producto 1", width="150px", height="150px">
+                        <h3>Betis</h3>
+                    </div>
+                </a>
+                <a href="cel.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Cel.jpg" alt="Producto 1">
+                        <h3>Celta</h3>
+                    </div>
+                </a>
+                <a href="esp.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Esp.jpg" alt="Producto 1">
+                        <h3>Espanyol</h3>
+                    </div>
+                </a>
+                <a href="gtf.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Get.jpg" alt="Producto 1">
+                        <h3>Getafe</h3>
+                    </div>
+                </a>
+                <a href="gir.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Gir.jpg" alt="Producto 1">
+                        <h3>Girona</h3>
+                    </div>
+                </a>
+                <a href="leg.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Leg.jpg" alt="Producto 1">
+                        <h3>Leganes</h3>
+                    </div>
+                </a>
+                <a href="lpm.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Lpm.jpg" alt="Producto 1">
+                        <h3>Las Palmas</h3>
+                    </div>
+                </a>
+                <a href="mll.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Mll.jpg" alt="Producto 1">
+                        <h3>Mallorca</h3>
+                    </div>
+                </a>
+                <a href="osa.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Osa.jpg" alt="Producto 1">
+                        <h3>Osasuna</h3>
+                    </div>
+                </a>
+                <a href="rma.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/rma.jpg" alt="Producto 1">
+                        <h3>Real Madrid</h3>
+                    </div>
+                </a>
+                <a href="rso.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/rso.jpg" alt="Producto 1">
+                        <h3>Real Sociedad</h3>
+                    </div>
+                </a>
+                <a href="rv.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/rv.jpg" alt="Producto 1">
+                        <h3>Rayo Vallecano</h3>
+                    </div>
+                </a>
+                <a href="sev.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/sev.jpg" alt="Producto 1">
+                        <h3>Sevilla</h3>
+                    </div>
+                </a>
+                <a href="valencia.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/val.jpg" alt="Producto 1">
+                        <h3>Valencia</h3>
+                    </div>
+                </a>
+                <a href="valla.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/valla.jpg" alt="Producto 1">
+                        <h3>Valladolid</h3>
+                    </div>
+                </a>
+                <a href="villa.html" class="producto-link">
+                    <div class="producto-item">
+                        <img src="ESCUDO/Villa.jpg" alt="Producto 1">
+                        <h3>Villarreal</h3>
+                    </div>
+                </a>
+            </section>
+        </div>
+        <footer>
+            <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
+            <p><i class="fab fa-instagram"></i> anartzaranguren</p>
+            <p><i class="fas fa-phone"></i> 946317896</p>
+        </footer>
+    </div>
+</body>
+</html>
