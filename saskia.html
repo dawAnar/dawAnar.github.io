@@ -21,7 +21,7 @@
         }
         .container {
             width: 90%;
-            margin: 0 auto;
+            margin: 15px auto 0; /* Espaciado automático horizontal y 15px de margen superior */
             flex: 1; /* Espazio dana okupetako */
         }
         .nav {
@@ -40,7 +40,7 @@
         .cart-table {
             width: 100%;
             border-collapse: collapse;
-            margin-top: 2%;
+            margin-top: 15px; /* Espaciado debajo del nav */
         }
         .cart-table th, .cart-table td {
             border: 1px solid #ccc;
@@ -80,16 +80,16 @@
             margin: 0;
             font-size: 1rem;
         }
-
     </style>
 </head>
 <body>
+    <nav class="nav">
+        <a href="index.html">Hasiera</a>
+        <a href="taldeak.html">Taldeak</a>
+        <a href="saskia.html">Saskia</a>
+        <a href="kontaktua.html">Kontaktua</a>
+    </nav>
     <div class="container">
-        <nav class="nav">
-            <a href="index.html">Hasiera</a>
-            <a href="saskia.html">Saskia</a>
-            <a href="kontaktua.html">Kontaktua</a>
-        </nav>
         <h1>Saskia</h1>
         <div id="cart-content">
             <table class="cart-table">

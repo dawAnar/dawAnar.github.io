@@ -20,14 +20,13 @@
             background-repeat: no-repeat;
         }
         
-        .row::after {
-            content: "";
-            clear: both;
-            display: table;
+        .row {
+            display: flex;
+            flex-flow: row wrap;
+            
         }
 
         [class*="col-"] {
-            float: left;
             padding: 15px;
         }
 
@@ -35,7 +34,16 @@
             font-family: "Lucida Sans", sans-serif;
         }
 
-        /* Nav */
+        .header {
+            width: 100%;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            text-align: center;
+            font-size: 1.5rem;
+            position: relative;
+        }
+
         .nav {
             background-color: rgba(0, 0, 0, 0.6);
             padding: 15px;
@@ -50,16 +58,6 @@
             margin-right: 15px;
         }
 
-        .header {
-            width: 100%;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, 0.6);
-            color: white;
-            text-align: center;
-            font-size: 1.5rem;
-            position: relative;
-        }
-
         .menu ul {
             list-style-type: none;
             margin: 0;
@@ -68,6 +66,7 @@
 
         .menu li {
             padding: 8px;
+            margin-bottom: 7px;
             color: #ffffff;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); 
         }
@@ -108,7 +107,7 @@
 
         /* Para móviles */
         [class*="col-"] {
-            width: 100%;
+            padding: 15px;
         }
 
         @media only screen and (min-width: 600px) {
@@ -122,11 +121,10 @@
             .col-s-7 {width: 58.33%;}
             .col-s-8 {width: 66.66%;}
             .col-s-9 {width: 75%;}
-            .col-s-10 {width: 83.33%;} 
+            .col-s-10 {width: 83.33%;}
             .col-s-11 {width: 91.66%;}
             .col-s-12 {width: 100%;}
         }
-
         @media only screen and (min-width: 768px) {
             /* Para escritorio */
             .col-1 {width: 8.33%;}
@@ -146,46 +144,47 @@
 </head>
 <body>
 
-<div class="main-container">
-    <!-- Navegación -->
-    <div class="nav">
-        <a href="index.html">Hasiera</a>
-        <a href="taldeak.html">Taldeak</a>
-        <a href="saskia.html">Saskia</a>
-        <a href="kontaktua.html">Kontaktua</a>
+    <div class="main-container">
+        <!-- Navegación -->
+        <div class="nav">
+            <a href="index.html">Hasiera</a>
+            <a href="taldeak.html">Taldeak</a>
+            <a href="saskia.html">Saskia</a>
+            <a href="kontaktua.html">Kontaktua</a>
+        </div>
+    
+        <header class="header">
+            <a href="saskia.html" class="saskia"></a>
+            <div class="header-title">
+                <h1>FUTBOL11</h1>
+            </div>
+        </header>
+    
+        <div class="row">
+            <div class="col-3 col-s-3 menu">
+                <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
+                <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a></p>
+                <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
+                <ul>
+                    <li><a href="info.html">Info</a></li>
+                    <li><a href="op.html">Iritzia</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-s-9 center-content">
+                <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJyb3lrZGE3NDVweHQ5dzh2YXU3b2loNDZsYnpxNTRkNWNieGhjbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qYxZiiuxQIiexrKqj3/giphy.gif" alt="GIF de Giphy">
+            </div>
+    
+            <div class="col-3 col-s-12 center-content">
+                <img src="img/LOGO.jpg" alt="Logoa", width="300px", height="300px">
+            </div>
+        </div>
+    
+        <footer class="footer">
+            <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
+            <p><i class="fab fa-instagram"></i> anartzaranguren</p>
+            <p><i class="fas fa-phone"></i> 946317896</p>
+        </footer>
     </div>
-
-    <header class="header">
-        <a href="saskia.html" class="saskia"></a>
-        <div class="header-title">
-            <h1>FUTBOL11</h1>
-        </div>
-    </header>
-
-    <div class="row">
-        <div class="col-3 col-s-3 menu">
-            <p>Ongi etorri FUTBOL11 web orrialdera! Bertan LALIGAko taldeen lehen eta bigarren kamisetak topatuko dituzu.</p>
-            <p>Gutaz gehiago jakin nahi duzu? <a href="info.html">Klikatu hemen!</a></p>
-            <p><i class="fa fa-exclamation-triangle"></i> Adi! Gabonetako deskontuak! Orain dena %20ko deskontuarekin!</p>
-            <ul>
-                <li><a href="op.html">Iritzia</a></li>
-            </ul>
-        </div>
-        <div class="col-6 col-s-9 center-content">
-            <img src="https://i.giphy.com/media/v1.Y2lkPTc5MGI3NjExcWJyb3lrZGE3NDVweHQ5dzh2YXU3b2loNDZsYnpxNTRkNWNieGhjbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qYxZiiuxQIiexrKqj3/giphy.gif" alt="GIF de Giphy">
-        </div>
-
-        <div class="col-3 col-s-12 center-content">
-            <img src="img/LOGO.jpg" alt="Logoa", width="300px", height="300px">
-        </div>
-    </div>
-
-    <footer class="footer">
-        <p><i class="fa-brands fa-whatsapp"></i> 623983478</p>
-        <p><i class="fab fa-instagram"></i> anartzaranguren</p>
-        <p><i class="fas fa-phone"></i> 946317896</p>
-    </footer>
-</div>
-
-</body>
+    
+    </body>
 </html>
