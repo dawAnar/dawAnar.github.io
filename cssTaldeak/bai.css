@@ -115,3 +115,74 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        height: auto; /* Permite que el cuerpo crezca con el contenido */
+        overflow-y: auto; /* Activa la barra vertical si el contenido lo necesita */
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav {
+        display: flex; /* Mantiene los enlaces en una fila */
+        justify-content: center; /* Centra los enlaces horizontalmente */
+        align-items: center;
+        gap: 10px; /* Espaciado entre enlaces */
+        padding: 10px 0;
+    }
+
+    .nav a {
+        display: inline-block; /* Mantiene el diseño en fila */
+        margin-right: 0; /* Elimina márgenes no deseados */
+    }
+
+    .dana {
+        flex-direction: column; /* Cambia la disposición a una columna */
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .aukeraketa {
+        width: 80%; /* Ajusta el ancho */
+        padding: 5%;
+        text-align: center; /* Centra los contenidos */
+    }
+
+    .button-container {
+        display: flex;
+        flex-direction: column; /* Los botones se apilan en columna */
+        gap: 10px; /* Espacio entre los botones */
+        width: 100%; /* El contenedor ocupa el 100% del ancho */
+        align-items: center; /* Centra los botones horizontalmente */
+        margin: 0 auto; /* Asegura que el contenedor de los botones esté centrado */
+    }
+
+    .button {
+        width: 80%; /* Los botones ocupan el 80% del contenedor */
+        max-width: 300px; /* Limita el ancho máximo de los botones */
+        text-align: center; /* Centra el texto dentro de los botones */
+        padding: 12px 0; /* Ajuste del padding de los botones */
+    }
+    footer {
+        position: fixed; /* Hace que el footer se quede fijo en la parte inferior */
+        bottom: 0;
+        left: 0;
+        width: 100%; /* Ocupa el ancho completo */
+        display: flex; /* Mantiene los elementos del footer en fila */
+        justify-content: space-around; /* Espacia uniformemente los elementos */
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        padding: 10px;
+        box-sizing: border-box;
+    }
+
+    footer p {
+        font-size: 0.9rem; /* Tamaño más pequeño para pantallas pequeñas */
+        margin: 0;
+    }
+}
+
+
+
