@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c;
+    color: white;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Evita las barras de desplazamiento */
+}
+
+.nav a {
+    color: rgb(245, 243, 238);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.nav {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 120px); /* Ajusta altura del footer y nav */
+    text-align: center;
+}
+
+.thank-you-container {
+    background-color: #333;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+}
+
+.thank-you-container h1 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+    color: #00ff7f; /* Verde agradable */
+}
+
+.thank-you-container p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+footer {
+    width: 100vw; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+footer p {
+    margin: 0; 
+    font-size: 1rem; 
+}

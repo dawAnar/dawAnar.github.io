@@ -1,0 +1,69 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2c2c2c; /* Fondo oscuro elegante */
+    color: white;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden; /* Evita las barras de desplazamiento */
+}
+
+/* Barra de navegación */
+.nav {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    padding: 15px;
+    text-align: right;
+    width: 100%; /* Ocupa todo el ancho */
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho total */
+}
+
+.nav a {
+    color: rgb(245, 243, 238);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+/* Contenedor principal */
+.container {
+    max-width: 800px;
+    padding: 20px;
+    margin-left: 0; /* Elimina el centrado */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de la información */
+.informacion {
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #f4b400;
+}
+
+/* Estilo de los enlaces */
+a {
+    color: #f4b400;
+}
+
+/* Estilo del pie de página */
+footer {
+    width: 100vw; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+}
+
+footer p {
+    margin: 0; /* Elimina márgenes */
+    font-size: 1rem; /* Ajusta el tamaño del texto */
+}
