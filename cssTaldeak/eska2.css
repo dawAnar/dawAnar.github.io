@@ -102,3 +102,31 @@ footer p {
     font-size: 1rem; /* Ajusta el tamaño del texto */
 }
 
+@media (max-width: 768px) {
+    body {
+        overflow-y: auto; /* Permitimos desplazamiento vertical en pantallas pequeñas */
+        height: auto; /* Ajustamos la altura para adaptarse al contenido */
+    }
+
+    main {
+        padding: 10px; /* Reducimos el padding para ahorrar espacio */
+    }
+
+    .user-data {
+        width: 100%; /* Aseguramos que el formulario ocupe todo el ancho */
+        max-width: none; /* Eliminamos la restricción de ancho máximo */
+        margin: 20px auto; /* Centramos el formulario en la pantalla */
+    }
+
+    .button-container {
+        flex-direction: column; /* Los botones permanecen en columna */
+        align-items: stretch; /* Los botones ocupan todo el ancho disponible */
+        width: 100%; /* Ajustamos el ancho al 100% */
+    }
+
+    .submit-button {
+        font-size: 0.9rem; /* Reducimos el tamaño de los botones */
+        padding: 8px; /* Reducimos el padding */
+    }
+}
+
