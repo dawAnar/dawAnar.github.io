@@ -4,13 +4,7 @@ body {
     color: white;
     margin: 0;
     height: 100vh;
-    overflow: hidden; /* Evita las barras de desplazamiento */
-}
-
-.nav a {
-    color: rgb(245, 243, 238);
-    text-decoration: none;
-    margin-right: 15px;
+    overflow: hidden;
 }
 
 .nav {
@@ -19,12 +13,18 @@ body {
     text-align: right;
 }
 
+.nav a {
+    color: rgb(245, 243, 238);
+    text-decoration: none;
+    margin-right: 15px;
+}
+
 main {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 120px); /* Ajusta altura del footer y nav */
+    min-height: calc(100vh - 120px);
     text-align: center;
 }
 
@@ -39,7 +39,7 @@ main {
 .thank-you-container h1 {
     font-size: 2rem;
     margin-bottom: 15px;
-    color: #00ff7f; /* Verde agradable */
+    color: #00ff7f;
 }
 
 .thank-you-container p {
@@ -48,9 +48,9 @@ main {
 }
 
 footer {
-    width: 100vw; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+    width: 100vw;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -58,10 +58,10 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    box-sizing: border-box;
 }
 
 footer p {
-    margin: 0; 
-    font-size: 1rem; 
+    margin: 0;
+    font-size: 1rem;
 }

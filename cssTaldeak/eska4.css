@@ -4,19 +4,19 @@ body {
     color: white;
     margin: 0;
     height: 100vh;
-    overflow: hidden; /* Evita las barras de desplazamiento */
-}
-
-.nav a {
-    color: rgb(245, 243, 238);
-    text-decoration: none;
-    margin-right: 15px;
+    overflow: hidden;
 }
 
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     text-align: right;
+}
+
+.nav a {
+    color: rgb(245, 243, 238);
+    text-decoration: none;
+    margin-right: 15px;
 }
 
 main {
@@ -27,20 +27,19 @@ main {
     border: 1px dotted #ccc;
     padding: 20px;
     max-width: 400px;
-    margin: 20px; /* Espaciado superior e izquierdo */
+    margin: 20px;
     text-align: left;
-    background-color: #333; /* Fondo para diferenciar el formulario */
-    border-radius: 8px; /* Bordes redondeados */
+    background-color: #333;
+    border-radius: 8px;
 }
 
 .button-container {
     display: flex;
-    flex-direction: column; /* Coloca los botones en una columna */
-    gap: 10px; /* Espacio entre los botones */
-    margin-top: 20px; /* Espacio entre los botones y la tabla */
-    width: fit-content; /* El ancho será ajustado al contenido de los botones */
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+    width: fit-content;
 }
-
 
 form {
     display: flex;
@@ -83,9 +82,9 @@ input:focus, select:focus {
 }
 
 footer {
-    width: 100vw; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+    width: 100vw;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
@@ -93,7 +92,7 @@ footer {
     position: absolute;
     bottom: 0;
     left: 0;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    box-sizing: border-box;
 }
 
 footer p {

@@ -4,7 +4,6 @@ body {
     color: white;
     margin: 0;
     height: 100vh;
-    overflow: hidden; 
     display: flex;
     flex-direction: column;
 }
@@ -13,8 +12,7 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 15px;
     text-align: right;
-    width: 100%; 
-    box-sizing: border-box; 
+    box-sizing: border-box;
 }
 
 .nav a {
@@ -33,9 +31,8 @@ body {
     border: 1px dotted #ffffff;
     padding: 20px;
     max-width: 400px;
-    margin-left: 20px; 
-    text-align: left; 
-    flex-basis: 40%;
+    margin-left: 20px;
+    text-align: left;
 }
 
 .form {
@@ -72,23 +69,20 @@ body {
     background-color: #0056b3;
 }
 
-
 footer {
-    width: 100vw; /* Hace que el footer ocupe el 100% del ancho de la ventana */
+    width: 100%;
     padding: 20px;
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo semi-transparente oscuro */
+    background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: absolute;
     bottom: 0;
-    left: 0;
-    box-sizing: border-box; /* Asegura que el padding no afecte el ancho */
+    box-sizing: border-box;
 }
 
 footer p {
-    margin: 0; /* Elimina márgenes */
-    font-size: 1rem; /* Ajusta el tamaño del texto */
+    margin: 0;
+    font-size: 1rem;
 }
-
