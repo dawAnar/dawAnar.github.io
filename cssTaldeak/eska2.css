@@ -3,19 +3,20 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; /* Asegura que el body ocupe toda la altura de la ventana */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Para asegurar que el footer quede al final */
+    flex-direction: column; 
 }
 
 h1, h2 {
-    margin-bottom: 15px;
+    margin-bottom: 1.5%;
 }
 
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 1.5%;
     text-align: right;
+    box-sizing: border-box;
 }
 
 .nav a {
@@ -23,36 +24,32 @@ h1, h2 {
     text-decoration: none;
     margin-right: 15px;
 }
-
 main {
-    max-width: 1200px;
-    margin: 20px auto;
-    padding: 20px;
-    flex: 1; /* Asegura que el main ocupe el espacio restante */
-    overflow-y: auto; /* Permite desplazamiento en el contenido cuando es largo */
+    padding: 2%;
+    flex: 1; 
+    overflow-y: auto; 
 }
 
 .cart-total {
     text-align: right;
     font-weight: bold;
-    margin-top: 10px;
+    margin-top: 1%;
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 2%;
 }
 
 table th, table td {
     border: 1px solid #ccc;
-    padding: 10px;
+    padding: 1%;
     text-align: left;
 }
 
 .user-data {
     border: 1px dotted #ccc;
-    padding: 20px;
     max-width: 400px;
     text-align: left;
 }
@@ -65,7 +62,7 @@ table .align-right {
     display: flex;
     flex-direction: column;
     gap: 10px;
-    margin-top: 20px;
+    margin-top: 2%;
     width: fit-content;
 }
 
@@ -74,32 +71,28 @@ table .align-right {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 10px;
+    padding: 1.5%;
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
     text-align: center;
-    transition: background-color 0.3s ease;
 }
 
 .submit-button:hover {
     background-color: #0056b3;
 }
 
-/* Footer siempre anclado al fondo */
 footer {
     width: 100%;
-    padding: 20px;
+    padding: 1.5%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: absolute;
     bottom: 0;
-    left: 0;
     box-sizing: border-box;
-    z-index: 10; /* Asegura que el footer quede encima del contenido */
 }
 
 footer p {
@@ -110,26 +103,23 @@ footer p {
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     body {
-        height: auto; /* Cambia la altura del body para adaptarse al contenido */
-        overflow-y: auto; /* Activa el desplazamiento cuando el contenido sea más largo */
+        height: auto; 
+        overflow-y: auto; 
     }
 
     main {
-        padding: 10px;
+        padding: 2%;
     }
 
     .user-data {
-        width: 100%;
-        margin: 20px auto;
+        margin: 2% auto;
     }
 
     .button-container {
-        width: 100%;
         align-items: stretch;
     }
 
     .submit-button {
-        font-size: 0.9rem;
-        padding: 8px;
+        font-size: 1rem;
     }
 }

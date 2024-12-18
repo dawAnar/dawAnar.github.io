@@ -4,7 +4,6 @@ body {
     color: white;
     margin: 0;
     height: 100vh;
-    overflow: hidden;
     display: flex;
     flex-direction: column;
 }
@@ -13,22 +12,20 @@ body {
     background-color: rgba(0, 0, 0, 0.6);
     padding: 1.5%;
     text-align: right;
-    width: 100%;
     box-sizing: border-box;
 }
 
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 1.5%;
+    margin-right: 15px;
 }
 
 .container {
-    width: 100%;
-    padding: 20px;
+    width: 50%;
+    padding: 2%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-    margin-top: 60px;
+    margin-top: 6%;
 }
 
 h1 {
@@ -38,14 +35,14 @@ h1 {
 
 label {
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 1%;
     display: block;
 }
 
 input, textarea {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 1%;
+    margin-bottom: 1.5%;
     border: 1px solid #ccc;
     border-radius: 5px;
 }
@@ -53,10 +50,9 @@ input, textarea {
 button {
     background-color: #1e73be;
     color: white;
-    padding: 10px 20px;
+    padding: 1%;
     border: none;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 1rem;
 }
 
@@ -65,8 +61,8 @@ button:hover {
 }
 
 footer {
-    width: 100vw;
-    padding: 2%;
+    width: 100%;
+    padding: 1.5%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
@@ -74,7 +70,6 @@ footer {
     align-items: center;
     position: absolute;
     bottom: 0;
-    left: 0;
     box-sizing: border-box;
 }
 
