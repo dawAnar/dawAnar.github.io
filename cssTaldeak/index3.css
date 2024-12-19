@@ -26,8 +26,6 @@ body {
 
 /* Header */
 .header {
-    grid-row: 1;
-    grid-column: 1;
     width: 100%;
     padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);

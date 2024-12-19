@@ -9,11 +9,22 @@ body {
     overflow: hidden; /* Evita barras de desplazamiento vertical innecesarias */
 }
 
+.header {
+    width: 100%;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 1.5%;
+    padding: 15px;
     text-align: right;
-    box-sizing: border-box;
+    width: 100%;
 }
 
 .nav a {
@@ -21,6 +32,11 @@ body {
     text-decoration: none;
     margin-right: 15px;
 }
+
+.nav a:hover {
+    color: #007bff;
+}
+
 
 .container {
     padding: 2%;
