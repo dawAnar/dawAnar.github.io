@@ -3,9 +3,10 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; 
+    min-height: 100vh; /* Ocupa toda la altura de la ventana */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Coloca los elementos en columna */
+    overflow: hidden; /* Elimina barras de desplazamiento vertical */
 }
 
 .nav {
@@ -26,8 +27,9 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 120px);
+    flex: 1; /* Toma todo el espacio disponible */
     text-align: center;
+    overflow-y: auto; /* Permite desplazamiento en el contenido principal si es necesario */
 }
 
 .thank-you-container {
@@ -35,15 +37,19 @@ main {
     border-radius: 10px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     max-width: 500px;
+    padding: 20px; /* Añadido un padding para mejorar el diseño */
+    text-align: center;
 }
 
 .thank-you-container h1 {
     font-size: 2rem;
     color: #00ff7f;
+    margin-bottom: 1rem; /* Añadido margen para espaciado */
 }
 
 .thank-you-container p {
     font-size: 1.2rem;
+    margin-bottom: 1rem; /* Añadido margen para espaciado */
 }
 
 footer {
@@ -54,12 +60,34 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed; /* Fija el footer en la parte inferior */
     bottom: 0;
+    left: 0;
     box-sizing: border-box;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        height: 100vh; /* Asegura que el cuerpo ocupe toda la altura */
+        overflow: hidden; /* Elimina barras verticales innecesarias */
+    }
+
+    main {
+        padding: 10px; /* Ajusta el padding en móviles */
+        overflow-y: auto; /* Permite el desplazamiento en el contenido */
+    }
+
+    .thank-you-container {
+        max-width: 90%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+    }
+
+    footer {
+        position: fixed; /* Asegura que el footer esté siempre visible */
+    }
 }

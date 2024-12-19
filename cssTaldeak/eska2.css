@@ -3,9 +3,10 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; 
+    min-height: 100vh; /* Mantiene el cuerpo ocupando al menos el 100% de la ventana */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
 }
 
 h1, h2 {
@@ -24,10 +25,11 @@ h1, h2 {
     text-decoration: none;
     margin-right: 15px;
 }
+
 main {
     padding: 2%;
-    flex: 1; 
-    overflow-y: auto; 
+    flex: 1; /* Permite que el contenido principal ocupe todo el espacio disponible */
+    overflow-y: auto; /* Habilita el desplazamiento solo del contenido principal */
 }
 
 .cart-total {
@@ -90,8 +92,9 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    position: fixed; /* Cambia a fixed para que el footer esté siempre visible */
+    bottom: 0; /* Fija el footer al final de la pantalla */
+    left: 0;
     box-sizing: border-box;
 }
 
@@ -103,12 +106,13 @@ footer p {
 /* Media Queries para pantallas pequeñas */
 @media (max-width: 768px) {
     body {
-        height: auto; 
-        overflow-y: auto; 
+        height: 100vh; /* Asegura que el cuerpo ocupe toda la altura disponible */
+        overflow: hidden; /* Evita la barra de desplazamiento vertical en móviles */
     }
 
     main {
         padding: 2%;
+        overflow-y: auto; /* Solo el contenido principal puede desplazarse si es necesario */
     }
 
     .user-data {
@@ -121,5 +125,9 @@ footer p {
 
     .submit-button {
         font-size: 1rem;
+    }
+
+    footer {
+        position: fixed; /* Mantiene el footer fijo en la parte inferior */
     }
 }

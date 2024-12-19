@@ -3,7 +3,7 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    height: 100vh;
+    height: 100vh; /* Asegura que el cuerpo ocupe la altura total de la ventana */
     display: flex;
     flex-direction: column;
 }
@@ -24,7 +24,7 @@ body {
 .main-container {
     margin-top: 1.5%;
     display: flex;
-    flex: 1;
+    flex: 1; /* Permite que el contenedor principal ocupe todo el espacio restante */
 }
 
 .form-container {
@@ -76,12 +76,25 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
     bottom: 0;
+    left: 0;
     box-sizing: border-box;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+@media (max-width: 768px) {
+    .main-container {
+        flex: 1;
+        flex-direction: column;
+    }
+
+    footer {
+        position: fixed; /* Asegura que el footer esté siempre fijo */
+        bottom: 0;
+    }
 }

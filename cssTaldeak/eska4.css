@@ -3,9 +3,10 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; 
+    min-height: 100vh; /* Ocupa al menos toda la ventana */
     display: flex;
-    flex-direction: column; 
+    flex-direction: column; /* Organiza elementos verticalmente */
+    overflow: hidden; /* Evita barras de desplazamiento vertical innecesarias */
 }
 
 .nav {
@@ -23,6 +24,8 @@ body {
 
 main {
     padding: 20px;
+    flex: 1; /* Permite que el contenido principal ocupe todo el espacio restante */
+    overflow-y: auto; /* Habilita el desplazamiento solo en el contenido principal */
 }
 
 .form-container {
@@ -91,12 +94,42 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
-    bottom: 0;
+    position: fixed; /* Cambia a fixed para que el footer esté siempre visible */
+    bottom: 0; /* Fija el footer al final de la pantalla */
+    left: 0;
     box-sizing: border-box;
 }
 
 footer p {
     margin: 0;
     font-size: 1rem;
+}
+
+/* Media Queries para pantallas pequeñas */
+@media (max-width: 768px) {
+    body {
+        height: 100vh; /* Asegura que el cuerpo ocupe toda la altura */
+        overflow: hidden; /* Evita la barra de desplazamiento vertical */
+    }
+
+    main {
+        padding: 20px;
+        overflow-y: auto; /* Permite el desplazamiento del contenido principal */
+    }
+
+    .form-container {
+        max-width: 90%; /* Ajusta el formulario para pantallas pequeñas */
+    }
+
+    .button-container {
+        align-items: stretch;
+    }
+
+    .submit-button {
+        font-size: 1rem;
+    }
+
+    footer {
+        position: fixed; /* Asegura que el footer permanezca fijo abajo */
+    }
 }
