@@ -6,12 +6,11 @@ body {
     min-height: 100vh; /* Ocupa al menos toda la ventana */
     display: flex;
     flex-direction: column; /* Organiza elementos verticalmente */
-    overflow: hidden; /* Evita barras de desplazamiento vertical innecesarias */
 }
 
 .header {
     width: 100%;
-    padding: 20px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -19,10 +18,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 5px;
     text-align: right;
     width: 100%;
 }
@@ -41,7 +39,7 @@ body {
 main {
     padding: 20px;
     flex: 1; /* Permite que el contenido principal ocupe todo el espacio restante */
-    overflow-y: auto; /* Habilita el desplazamiento solo en el contenido principal */
+    overflow-y: auto;
 }
 
 .form-container {
@@ -89,13 +87,13 @@ input:focus, select:focus {
 .submit-button {
     background-color: #007bff;
     color: white;
-    border: none;
     border-radius: 5px;
-    padding: 15%;
-    font-size: 1rem;
+    padding: 5%;
     cursor: pointer;
-    text-decoration: none;
     text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 1rem;
 }
 
 .submit-button:hover {
@@ -104,14 +102,14 @@ input:focus, select:focus {
 
 footer {
     width: 100%;
-    padding: 1.5%;
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambia a fixed para que el footer esté siempre visible */
-    bottom: 0; /* Fija el footer al final de la pantalla */
+    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
+    bottom: 0;
     left: 0;
     box-sizing: border-box;
 }

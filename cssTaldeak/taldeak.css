@@ -6,11 +6,12 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 
 .header {
     width: 100%;
-    padding: 2px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -18,10 +19,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 5px;
     text-align: right;
     width: 100%;
 }
@@ -82,7 +82,7 @@ footer p {
     font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
     .producto-item {
         flex: 0 1 calc(33.33% - 15px);
     }

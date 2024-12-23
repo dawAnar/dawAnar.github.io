@@ -14,7 +14,7 @@ body {
 
 .header {
     width: 100%;
-    padding: 20px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -22,10 +22,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 5px;
     text-align: right;
     width: 100%;
 }
@@ -34,10 +33,6 @@ body {
     color: rgb(245, 243, 238);
     text-decoration: none;
     margin-right: 15px;
-}
-
-.nav a:hover {
-    color: #007bff;
 }
 
 
@@ -82,14 +77,15 @@ body {
 
 footer {
     width: 100%;
-    padding: 1.5%;
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
     bottom: 0;
+    left: 0;
     box-sizing: border-box;
 }
 

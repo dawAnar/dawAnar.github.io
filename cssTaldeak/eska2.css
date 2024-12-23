@@ -3,19 +3,14 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; /* Mantiene el cuerpo ocupando al menos el 100% de la ventana */
+    height: 100vh; /* Asegura que el cuerpo ocupe la altura total de la ventana */
     display: flex;
-    flex-direction: column; /* Organiza los elementos verticalmente */
-    overflow: hidden; /* Evita barras de desplazamiento innecesarias */
-}
-
-h1, h2 {
-    margin-bottom: 1.5%;
+    flex-direction: column;
 }
 
 .header {
     width: 100%;
-    padding: 20px;
+    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -26,7 +21,7 @@ h1, h2 {
 /* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 5px;
     text-align: right;
     width: 100%;
 }
@@ -41,6 +36,9 @@ h1, h2 {
     color: #007bff;
 }
 
+h1, h2 {
+    margin-bottom: 1.5%;
+}
 
 main {
     padding: 2%;
@@ -57,7 +55,7 @@ main {
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 2%;
+    margin-bottom: 0.5%;
 }
 
 table th, table td {
@@ -77,11 +75,9 @@ table .align-right {
 }
 
 .button-container {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    margin-top: 2%;
-    width: fit-content;
+    display: flex; /* Cambiado de columna a fila */
+    flex-direction: row; /* Asegura que los botones estén en línea */
+    gap: 5px;
 }
 
 .submit-button {
@@ -89,7 +85,7 @@ table .align-right {
     color: white;
     border: none;
     border-radius: 5px;
-    padding: 1.5%;
+    padding: 0.5%;
     font-size: 1rem;
     cursor: pointer;
     text-decoration: none;
@@ -102,7 +98,7 @@ table .align-right {
 
 footer {
     width: 100%;
-    padding: 1.5%;
+    padding: 1.1%; /* Igual al primer código */
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
@@ -136,6 +132,7 @@ footer p {
     }
 
     .button-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
         align-items: stretch;
     }
 
