@@ -3,15 +3,14 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; /* El cuerpo ocupa toda la altura de la pantalla */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Flex para organizar elementos */
-    overflow: hidden; /* Evita barras de desplazamiento vertical innecesarias */
+    flex-direction: column; 
+    overflow: hidden; 
 }
 
 .header {
     width: 100%;
-    padding: 20px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -19,10 +18,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 0.5%;
     text-align: right;
     width: 100%;
 }
@@ -30,18 +28,16 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 1%;
 }
 
 .nav a:hover {
     color: #007bff;
 }
 
-
 .container {
     padding: 2%;
-    flex: 1; /* Permite que el contenedor principal ocupe el espacio restante */
-    overflow-y: auto; /* Habilita el desplazamiento solo en el contenedor */
+    flex: 1; 
 }
 
 .button-container {
@@ -88,14 +84,14 @@ body {
 
 footer {
     width: 100%;
-    padding: 1.5%;
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambia a fixed para que esté siempre visible */
-    bottom: 0; /* Fija el footer al final de la pantalla */
+    position: fixed; 
+    bottom: 0;
     left: 0;
     box-sizing: border-box;
 }

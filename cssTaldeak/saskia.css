@@ -14,7 +14,7 @@ body {
 
 .header {
     width: 100%;
-    padding: 1px;
+    padding: 0.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -24,7 +24,7 @@ body {
 
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 0.5%;
     text-align: right;
     width: 100%;
 }
@@ -32,19 +32,22 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 2%;
 }
 
+.nav a:hover {
+    color: #007bff;
+}
 
 .container {
     width: 90%;
-    margin: 15px auto 0;
+    margin: 2% auto 0;
 }
 
 .cart-table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 1.5%;
+    margin-top: 2%;
 }
 
 .cart-table th, .cart-table td {
@@ -83,7 +86,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
+    position: fixed; 
     bottom: 0;
     left: 0;
     box-sizing: border-box;
@@ -102,5 +105,4 @@ footer p {
     .nav {
         text-align: center;
     }
-
 }

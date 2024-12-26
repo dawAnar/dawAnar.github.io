@@ -10,7 +10,7 @@ body {
 
 .header {
     width: 100%;
-    padding: 1px;
+    padding: 0.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -20,7 +20,7 @@ body {
 
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 0.5%;
     text-align: right;
     width: 100%;
 }
@@ -28,9 +28,8 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 2%;
 }
-
 
 .container {
     display: flex;
@@ -48,7 +47,7 @@ body {
     margin-top: 2%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    gap: 2%;
     align-items: flex-start;
 }
 
@@ -71,7 +70,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
+    position: fixed; 
     bottom: 0;
     left: 0;
     box-sizing: border-box;
@@ -93,7 +92,7 @@ footer p {
 
     .nav a {
         display: inline-block;
-        margin: 5px 10px; /* Ajustar márgenes para mejor legibilidad */
+        margin: 2% 4%; /* Ajustar márgenes para mejor legibilidad */
     }
 
     .container {
@@ -104,7 +103,7 @@ footer p {
 
     .camiseta img {
         width: 100%; /* Ajustar el tamaño de la imagen para pantallas pequeñas */
-        max-width: 300px;
+        max-width: 60%;
         height: auto;
     }
 
@@ -118,4 +117,3 @@ footer p {
         text-align: center;
     }
 }
-

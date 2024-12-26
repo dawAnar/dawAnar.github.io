@@ -3,14 +3,13 @@ body {
     background-color: #2c2c2c;
     color: white;
     margin: 0;
-    min-height: 100vh; /* Ocupa al menos toda la ventana */
+    min-height: 100vh; 
     display: flex;
-    flex-direction: column; /* Organiza elementos verticalmente */
+    flex-direction: column; 
 }
 
 .header {
     width: 100%;
-    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -20,7 +19,7 @@ body {
 
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 0.5%;
     text-align: right;
     width: 100%;
 }
@@ -28,7 +27,7 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 1%;
 }
 
 .nav a:hover {
@@ -38,7 +37,7 @@ body {
 
 main {
     padding: 20px;
-    flex: 1; /* Permite que el contenido principal ocupe todo el espacio restante */
+    flex: 1; 
     overflow-y: auto;
 }
 
@@ -108,7 +107,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
+    position: fixed; 
     bottom: 0;
     left: 0;
     box-sizing: border-box;
@@ -119,11 +118,10 @@ footer p {
     font-size: 1rem;
 }
 
-/* Media Queries para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     body {
-        height: 100vh; /* Asegura que el cuerpo ocupe toda la altura */
-        overflow: hidden; /* Evita la barra de desplazamiento vertical */
+        height: 100vh; 
+        overflow: hidden; 
     }
 
     .nav {
@@ -132,11 +130,11 @@ footer p {
 
     main {
         padding: 20px;
-        overflow-y: auto; /* Permite el desplazamiento del contenido principal */
+        overflow-y: auto; 
     }
 
     .form-container {
-        max-width: 90%; /* Ajusta el formulario para pantallas pequeñas */
+        max-width: 90%; 
     }
 
     .button-container {
@@ -148,6 +146,6 @@ footer p {
     }
 
     footer {
-        position: fixed; /* Asegura que el footer permanezca fijo abajo */
+        position: fixed; 
     }
 }

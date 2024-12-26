@@ -10,7 +10,6 @@ body {
 
 .header {
     width: 100%;
-    padding: 1px;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -18,10 +17,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 5px;
+    padding: 0.5%;
     text-align: right;
     width: 100%;
 }
@@ -29,12 +27,13 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 1%;
 }
 
 .nav a:hover {
     color: #007bff;
 }
+
 
 h1, h2 {
     margin-bottom: 1.5%;
@@ -42,8 +41,8 @@ h1, h2 {
 
 main {
     padding: 2%;
-    flex: 1; /* Permite que el contenido principal ocupe todo el espacio disponible */
-    overflow-y: auto; /* Habilita el desplazamiento solo del contenido principal */
+    flex: 1; 
+    overflow-y: auto; 
 }
 
 .cart-total {
@@ -75,8 +74,8 @@ table .align-right {
 }
 
 .button-container {
-    display: flex; /* Cambiado de columna a fila */
-    flex-direction: row; /* Asegura que los botones estén en línea */
+    display: flex; 
+    flex-direction: row; 
     gap: 5px;
 }
 
@@ -98,14 +97,14 @@ table .align-right {
 
 footer {
     width: 100%;
-    padding: 1.1%; /* Igual al primer código */
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambia a fixed para que el footer esté siempre visible */
-    bottom: 0; /* Fija el footer al final de la pantalla */
+    position: fixed; 
+    bottom: 0;
     left: 0;
     box-sizing: border-box;
 }

@@ -11,7 +11,7 @@ body {
     background-image: url("../img/FONDO.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     color: white;
     display: flex;
     flex-direction: column;
@@ -24,10 +24,9 @@ body {
     height: 100%;
 }
 
-/* Header */
 .header {
     width: 100%;
-    padding: 20px;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -35,10 +34,9 @@ body {
     position: relative;
 }
 
-/* Navegación */
 .nav {
     background-color: rgba(0, 0, 0, 0.6);
-    padding: 15px;
+    padding: 2%;
     text-align: right;
     width: 100%;
 }
@@ -46,19 +44,18 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 15px;
+    margin-right: 2%;
 }
 
 .nav a:hover {
     color: #007bff;
 }
 
-/* Layout principal */
 .row {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr; /* Menú - Contenido central - Imagen */
-    gap: 15px; /* Espaciado entre columnas */
-    padding: 15px;
+    gap: 2%;
+    padding: 2%;
     background-color: rgba(0, 0, 0, 0.5);
     grid-row: 2;
     grid-column: 1;
@@ -84,9 +81,9 @@ body {
 }
 
 .menu li {
-    padding: 8px;
+    padding: 1%;
     color: #ffffff;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+    text-shadow: 0.1% 0.1% 0.3% rgba(0, 0, 0, 0.5);
 }
 
 .menu a {
@@ -99,34 +96,33 @@ body {
 }
 
 .menu p {
-    margin-bottom: 15px;
+    margin-bottom: 2%;
 }
 
 .novedades-container {
     text-align: center;
     color: white;
     width: 100%;
-    padding: 20px;
+    padding: 2%;
     box-sizing: border-box;
 }
 
 .novedades-container h2 {
-    margin-bottom: 20px;
+    margin-bottom: 2%;
     font-size: 1.3rem;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 0.1% 0.1% 0.5% rgba(0, 0, 0, 0.7);
 }
 
 .novedades-container h3 {
-    margin-bottom: 15px;
+    margin-bottom: 2%;
     font-size: 1rem;
-    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+    text-shadow: 0.1% 0.1% 0.5% rgba(0, 0, 0, 0.5);
 }
 
-/* Grid de productos */
 .productos-grid {
     display: grid;
-    gap: 15px;
-    margin-bottom: 30px;
+    gap: 2%;
+    margin-bottom: 3%;
 }
 
 .ascendidos {
@@ -149,23 +145,21 @@ body {
 
 .producto-item img {
     width: 100%;
-    height: 150px;
+    height: auto;
     object-fit: cover;
 }
 
 .producto-item h4 {
-    margin: 10px 0;
+    margin: 1% 0;
     color: #333;
     font-size: 1rem;
 }
 
-/* Hover efecto */
 .producto-item:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Footer */
 footer {
     width: 100%;
     padding: 1.1%;
@@ -174,7 +168,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
+    position: fixed; 
     bottom: 0;
     left: 0;
     box-sizing: border-box;
@@ -185,7 +179,6 @@ footer p {
     font-size: 1rem;
 }
 
-/* Responsividad */
 @media (max-width: 768px) {
     .row {
         grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
