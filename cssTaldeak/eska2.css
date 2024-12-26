@@ -116,10 +116,14 @@ footer p {
 }
 
 /* Media Queries para pantallas pequeñas */
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     body {
         height: 100vh; /* Asegura que el cuerpo ocupe toda la altura disponible */
         overflow: hidden; /* Evita la barra de desplazamiento vertical en móviles */
+    }
+
+    .nav {
+        text-align: center;
     }
 
     main {

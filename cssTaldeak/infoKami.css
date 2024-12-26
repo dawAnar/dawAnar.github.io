@@ -81,3 +81,41 @@ footer p {
     margin: 0;
     font-size: 1rem;
 }
+
+@media only screen and (max-width: 768px) {
+    body {
+        flex-direction: column;
+    }
+
+    .nav {
+        text-align: center;
+    }
+
+    .nav a {
+        display: inline-block;
+        margin: 5px 10px; /* Ajustar márgenes para mejor legibilidad */
+    }
+
+    .container {
+        flex-direction: column; /* Cambiar a columna para mejor disposición en pantallas pequeñas */
+        align-items: center; /* Centrar contenido */
+        padding: 5%;
+    }
+
+    .camiseta img {
+        width: 100%; /* Ajustar el tamaño de la imagen para pantallas pequeñas */
+        max-width: 300px;
+        height: auto;
+    }
+
+    .button-container {
+        align-items: center; /* Centrar botones */
+        width: 100%;
+    }
+
+    footer {
+        position: fixed; 
+        text-align: center;
+    }
+}
+

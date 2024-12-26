@@ -72,21 +72,21 @@ html {
     color: white;
 }
 
-.footer {
-    width: 100vw;
-    padding: 20px;
+footer {
+    width: 100%;
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    position: absolute;
+    position: fixed; /* Cambiar a fixed para que esté siempre pegado abajo */
     bottom: 0;
     left: 0;
     box-sizing: border-box;
 }
 
-.footer p {
+footer p {
     margin: 0;
     font-size: 1rem;
 }

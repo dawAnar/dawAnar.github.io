@@ -82,16 +82,13 @@ footer p {
     font-size: 1rem;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 768px) {
     .producto-item {
         flex: 0 1 calc(33.33% - 15px);
     }
 
     .nav {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-        padding: 10px 0;
+        text-align: center;
     }
 
     footer {
@@ -99,11 +96,5 @@ footer p {
     }
     footer p {
         font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 768px) {
-    footer {
-        position: fixed; 
     }
 }
