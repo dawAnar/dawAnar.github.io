@@ -86,11 +86,10 @@ footer p {
     font-size: 1rem;
 }
 
-/* Media Queries para pantallas pequeñas */
 @media only screen and (max-width: 768px) {
     body {
-        height: 100vh; /* Asegura que el cuerpo ocupe toda la altura */
-        overflow: hidden; /* Elimina barras verticales innecesarias */
+        height: 100vh; 
+        overflow: hidden; 
     }
 
     .nav {
@@ -98,15 +97,15 @@ footer p {
     }
 
     main {
-        padding: 10px; /* Ajusta el padding en móviles */
-        overflow-y: auto; /* Permite el desplazamiento en el contenido */
+        padding: 10px; 
+        overflow-y: auto; 
     }
 
     .thank-you-container {
-        max-width: 90%; /* Ajusta el ancho del contenedor en pantallas pequeñas */
+        max-width: 90%; 
     }
 
     footer {
-        position: fixed; /* Asegura que el footer esté siempre visible */
+        position: fixed; 
     }
 }

@@ -92,23 +92,23 @@ footer p {
 
     .nav a {
         display: inline-block;
-        margin: 2% 4%; /* Ajustar márgenes para mejor legibilidad */
+        margin: 2% 4%; /*Hobeto irakurtzeko*/
     }
 
     .container {
-        flex-direction: column; /* Cambiar a columna para mejor disposición en pantallas pequeñas */
-        align-items: center; /* Centrar contenido */
+        flex-direction: column; 
+        align-items: center; 
         padding: 5%;
     }
 
     .camiseta img {
-        width: 100%; /* Ajustar el tamaño de la imagen para pantallas pequeñas */
+        width: 100%; 
         max-width: 60%;
         height: auto;
     }
 
     .button-container {
-        align-items: center; /* Centrar botones */
+        align-items: center;/*Botoiak erdien*/
         width: 100%;
     }
 

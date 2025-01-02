@@ -19,8 +19,8 @@ body {
 
 .main-container {
     display: grid;
-    grid-template-rows: auto 1fr auto; /* Header, contenido principal, footer */
-    grid-template-columns: 1fr; /* Una columna general */
+    grid-template-rows: auto 1fr auto; 
+    grid-template-columns: 1fr; 
     height: 100%;
 }
 
@@ -53,7 +53,7 @@ body {
 
 .row {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr; /* Menú - Contenido central - Imagen */
+    grid-template-columns: 1fr 2fr 1fr; 
     gap: 2%;
     padding: 2%;
     background-color: rgba(0, 0, 0, 0.5);
@@ -181,7 +181,7 @@ footer p {
 
 @media (max-width: 768px) {
     .row {
-        grid-template-columns: 1fr; /* Una sola columna en dispositivos pequeños */
+        grid-template-columns: 1fr;
     }
 
     .footer {
@@ -196,6 +196,6 @@ footer p {
 
 @media (max-width: 480px) {
     .productos-grid {
-        grid-template-columns: 1fr; /* Productos en una columna */
+        grid-template-columns: 1fr; 
     }
 }

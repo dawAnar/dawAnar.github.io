@@ -14,7 +14,7 @@ body {
 
 .header {
     width: 100%;
-    padding: 0.1%;
+    padding: 1.1%;
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     text-align: center;
@@ -32,7 +32,7 @@ body {
 .nav a {
     color: rgb(245, 243, 238);
     text-decoration: none;
-    margin-right: 2%;
+    margin-right: 1%;
 }
 
 .nav a:hover {
